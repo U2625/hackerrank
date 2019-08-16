@@ -26,9 +26,8 @@ int main() {
         phonebook.insert (pair<string, int>(name, num));
     }
 
-    for (int i = 0; i < n; i++)
+    while (cin >> name)
     {
-        cin >> name;
         if (phonebook.find (name) == phonebook.end())
         {
             cout << "Not found" << endl;
