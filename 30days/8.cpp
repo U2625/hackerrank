@@ -22,12 +22,12 @@ int main() {
     {
         cin >> name;
         cin >> num;
-        phonebook.insert (pair<string, int>(name, num));	// = phonebook[name] = num;
+        phonebook.insert(pair<string, int>(name, num));	// = phonebook[name] = num;
     }
 
     while (cin >> name)
     {
-        if (phonebook.find (name) == phonebook.end())
+        if (phonebook.find(name) == phonebook.end())
         {
             cout << "Not found" << endl;
         } 
