@@ -14,7 +14,6 @@ int main() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     map<string, int> phonebook;
-    std::map<char,int>::iterator it;
 
     string name;
     int num;
