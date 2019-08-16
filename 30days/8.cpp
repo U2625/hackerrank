@@ -11,7 +11,7 @@ int main() {
    
     int n;
     cin >> n;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');	// = cin.ignore();
 
     map<string, int> phonebook;
 
@@ -22,7 +22,7 @@ int main() {
     {
         cin >> name;
         cin >> num;
-        phonebook.insert (pair<string, int>(name, num));
+        phonebook.insert (pair<string, int>(name, num));	// = phonebook[name] = num;
     }
 
     while (cin >> name)
